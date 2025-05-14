@@ -5,7 +5,7 @@ const userController = require('./routes/user_controller');
 
 dotenv.config();
 
-// Initialize Prisma Client and Express app
+// Initialize Express app
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -23,4 +23,5 @@ app.get('/', async (req, res) => {
     console.log('hello world');
 });
 
+// Use userController for /users routes
 app.use('/users', userController);
