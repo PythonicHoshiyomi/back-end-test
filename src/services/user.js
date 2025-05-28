@@ -1,7 +1,7 @@
 // user_service.js
 // Handles business logic for users, using userRepository
 
-const userRepository = require('./user_repository');
+const userRepository = require('../repository/user');
 
 const userService = {
     getAllUsers: async () => {

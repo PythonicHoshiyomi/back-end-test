@@ -1,7 +1,7 @@
 // Import required modules and initialize environment variables
 const express = require('express');
 const dotenv = require('dotenv');
-const userController = require('./routes/user_controller');
+const userController = require('./controller/user');
 
 dotenv.config();
 
