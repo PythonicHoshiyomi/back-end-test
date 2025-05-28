@@ -1,7 +1,7 @@
 // user_repository.js
 // Handles direct database operations for the User model
 
-const prisma = require('../db');
+const prisma = require('../../db');
 
 const userRepository = {
     findAll: () => prisma.user.findMany(),
